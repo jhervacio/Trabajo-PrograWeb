@@ -1,6 +1,6 @@
 package pe.edu.upc.almacenamiento.models.entities;
 
-import java.util.ArrayList;
+import java.util.ArrayList; 
 import java.util.List;
 
 import javax.persistence.Column;
@@ -39,9 +39,9 @@ public class Proveedor {
 	private String celular;
 	
 	@ManyToMany
-	@JoinTable(name = "proveedor_producto", 
+	@JoinTable(name = "proveedor_articulo", 
 		joinColumns = { @JoinColumn(name = "proveedor_id", referencedColumnName = "id") },
-		inverseJoinColumns = { @JoinColumn(name = "producto_id", referencedColumnName = "id") })
+		inverseJoinColumns = { @JoinColumn(name = "articulo_id", referencedColumnName = "id") })
 	private List<Articulos> articulos;
 	
 	//@OneToMany(mappedBy = "proveedor")
@@ -100,7 +100,7 @@ public class Proveedor {
 		this.celular = celular;
 	}
 
-	public List<Articulos> getProductos() {
+	public List<Articulos> getArticulos() {
 		return articulos;
 	}
 

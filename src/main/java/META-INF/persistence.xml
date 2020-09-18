@@ -4,6 +4,7 @@
 	<jta-data-source>java:/TPDS</jta-data-source>
 	<class>pe.edu.upc.almacenamiento.models.entities.Articulos</class>
 	<class>pe.edu.upc.almacenamiento.models.entities.Categoria</class>
+	<class>pe.edu.upc.almacenamiento.models.entities.IngresoArticulos</class>
 	<class>pe.edu.upc.almacenamiento.models.entities.Proveedor</class>
 	
 	<exclude-unlisted-classes>false</exclude-unlisted-classes>
